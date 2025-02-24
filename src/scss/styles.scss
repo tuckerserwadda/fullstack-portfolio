@@ -1,0 +1,16 @@
+// Import Bootstrap core
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Custom Variables (Before Bootstrap)
+@import "variables";
+
+// Bootstrap core components
+@import "bootstrap/scss/bootstrap";
+
+// Custom Styles
+@import "mixins";
+@import "fonts";
+@import "buttons";
+@import "utilities";
