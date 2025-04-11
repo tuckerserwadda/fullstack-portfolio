@@ -2,6 +2,10 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
+@import "foundation-sites/scss/foundation";
+
+// Load the grid and other essential components
+@include foundation-everything;
 
 // Custom Variables (Before Bootstrap)
 @import "variables";
@@ -12,5 +16,3 @@
 // Custom Styles
 @import "mixins";
 @import "fonts";
-@import "buttons";
-@import "utilities";

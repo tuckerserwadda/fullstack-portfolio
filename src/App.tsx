@@ -1,17 +1,9 @@
-import { FC } from 'react'
+import { FC } from "react";
 
-import './App.css'
+import "./App.scss";
 
-const App:FC = ()=> {
+const App: FC = () => {
+  return <div>my app</div>;
+};
 
-  return (
-    <>
-      <div>
-        <h1>My Portfolio</h1>
-      </div>
-      <h1>Fullstack React app</h1>
-    </>
-  )
-}
-
-export default App
+export default App;

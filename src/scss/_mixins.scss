@@ -1,0 +1,95 @@
+@import "./variables";
+
+// breakpoints
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}
+
+// center block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// flex-box
+@mixin flexbox($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// overflow text
+@mixin text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// box-shadow
+@mixin box-shadow($size) {
+  @if $size == light {
+    box-shadow: $box-shadow-light;
+  } @else if $size == medium {
+    box-shadow: $box-shadow-medium;
+  } @else if $size == dark {
+    box-shadow: $box-shadow-dark;
+  }
+}
+
+// border-radius
+@mixin border-radius($size) {
+  @if $size == sm {
+    border-radius: $border-radius-sm;
+  } @else if $size == md {
+    border-radius: $border-radius-md;
+  } @else if $size == lg {
+    border-radius: $border-radius-lg;
+  }
+}
+
+// spacing
+@mixin spacing($size) {
+  @if $size == xs {
+    padding: $spacing-xs;
+  } @else if $size == sm {
+    padding: $spacing-sm;
+  } @else if $size == md {
+    padding: $spacing-md;
+  } @else if $size == lg {
+    padding: $spacing-lg;
+  } @else if $size == xl {
+    padding: $spacing-xl;
+  }
+}
+// button
+@mixin button($bg-color, $border-radius, $spacing) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $spacing;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
