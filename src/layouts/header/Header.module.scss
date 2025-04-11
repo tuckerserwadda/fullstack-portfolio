@@ -1,0 +1,13 @@
+@import "/src/scss/_mixins.scss";
+@import "/src/scss/variables";
+@import "/src/scss/_fonts.scss";
+@import "/src/scss/_typography.scss";
+@import "foundation-sites/scss/foundation";
+
+.header {
+  background-color: $background-color;
+  height: 75px;
+  width: 100%;
+  border: 1px solid red;
+  // @include spacing(md);
+}

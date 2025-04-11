@@ -1,0 +1,64 @@
+// colors
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$accent-color: #95e6b7;
+$background-color: #867676;
+$text-color: #333;
+// Success Gradient (Green Tones)
+$success-light: #56ab2f;
+$success-dark: #a8e063;
+$success-gradient: linear-gradient(45deg, $success-light, $success-dark);
+
+// Warning Gradient (Yellow Tones)
+$warning-light: #f2994a;
+$warning-dark: #f2c94c;
+$warning-gradient: linear-gradient(45deg, $warning-light, $warning-dark);
+
+// Error Gradient (Red Tones)
+$error-light: #d31027;
+$error-dark: #ff758c;
+$error-gradient: linear-gradient(45deg, $error-light, $error-dark);
+
+// fonts
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+$font-size-base: 16px;
+$font-size-small: 14px;
+$font-size-large: 20px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// spacing i.e padding and margins
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// breaking points
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1200px;
+
+// border- radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+// box-shadows
+$box-shadow-light: 0px 2px 4px rgba(0, 0, 0, 0.1);
+$box-shadow-medium: 0px 4px 8px rgba(0, 0, 0, 0.2);
+$box-shadow-dark: 0px 6px 12px rgba(0, 0, 0, 0.3);
+
+// z-index
+$z-index-header: 1000;
+$z-index-modal: 1050;
+$z-index-tooltip: 1100;
+
+// grid-spacing
+$grid-gap: 16px;
+$grid-columns: 12;

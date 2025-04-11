@@ -1,0 +1,18 @@
+// Import Bootstrap core
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "foundation-sites/scss/foundation";
+
+// Load the grid and other essential components
+@include foundation-everything;
+
+// Custom Variables (Before Bootstrap)
+@import "variables";
+
+// Bootstrap core components
+@import "bootstrap/scss/bootstrap";
+
+// Custom Styles
+@import "mixins";
+@import "fonts";
